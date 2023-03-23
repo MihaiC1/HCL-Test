@@ -20,12 +20,13 @@ public class Main {
             area = (float)Math.sqrt((s*(s-t.getL1())*(s-t.getL2())*(s-t.getL3())));
         }
 
-
+        System.out.println(String.format("%.02f",area));
         return String.format("%.02f",area);
     }
 
 
     public static void main(String[] args) {
         Main.printNumbers();
+        Main.area(new Triangle(12,13,2));
     }
 }
