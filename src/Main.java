@@ -5,7 +5,7 @@ public class Main {
     public static ArrayList<Integer> printNumbers(){
         ArrayList<Integer> array = new ArrayList<>();
         for (int i = 0; i < 11;i++){
-            if (i == 9){
+            if (i == 9 || i==0){
                 continue;
             }
             array.add(i);
@@ -25,6 +25,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-
+        System.out.println(printNumbers());
+        System.out.println(area(new Triangle(12,13,2)));
     }
 }

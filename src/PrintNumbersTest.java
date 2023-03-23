@@ -11,10 +11,10 @@ class PrintNumbersTest {
 
         ArrayList<Integer> expected =new ArrayList<>();
         for (int i = 0; i < 11; i++){
-            if (i != 9){
-                expected.add(i);
+            if (i == 9 || i == 0){
+                continue;
             }
-
+            expected.add(i);
         }
         assertEquals(expected, Main.printNumbers());
     }
