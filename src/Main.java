@@ -10,6 +10,7 @@ public class Main {
             }
             array.add(i);
         }
+        System.out.println(array);
         return array;
     }
     public static String area(Triangle t){
@@ -25,7 +26,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(printNumbers());
-        System.out.println(area(new Triangle(12,13,2)));
+        Main.printNumbers();
     }
 }
